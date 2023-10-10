@@ -16,6 +16,7 @@
 
 <body>
     <div class="main-container">
+        <nav style="display: none;" >
         <header>
             <img src="images/logo/Booki.png" alt="logo">
             
@@ -24,33 +25,36 @@
                 <li><a href="#">Activité</a></li>
             </ul>
         </header>
-        <nav classe="searchbar">
+        <div class="text">
+             <h2>Trouvez votre Hébergement pour des vacances de reves </h2>
+             <p>En plein centre-ville ou en pleine nature</p>
+        </div>
+        <div class="searchbar">
             <i class="fa-solid fa-location-dot"></i>
-             <form action=""> 
-                <input type="text" placeholder="Marseille,France" name="q"> 
-                <button class="ax" type="submit">Rechercher</button>
-             </form> 
-           
-            </nav>
-        <nav class="filtres">
-            <li>Filtres</li>
-          <div class="ox">
-            <li><i class="fa-solid fa-money-bill-wave"></i> Economique</li>
-            <li><i class="fa-solid fa-person"></i> Familial</li>
-            <li><i class="fa-solid fa-heart"></i> Romantique</li>
-            <li><i class="fa-solid fa-fire"></i> Nos pepites</li>
+                <input  class="searchplace" type="text" placeholder="Marseille,France" name="q"> 
+                <button class="search" type="submit">Rechercher</button>
+            </div>
+          <div class="filtres">
+            <h3>Filtres</h3>
+          <div class="filtres-links">
+            <li><i class="fa-solid fa-money-bill-wave"></i>  Economique</li>
+            <li><i class="fa-solid fa-person"></i>  Familial</li>
+            <li><i class="fa-solid fa-heart"></i>  Romantique</li>
+            <li><i class="fa-solid fa-fire"></i>  Nos pepites</li>
           </div>
+        </div>
         </nav>
-
+       
         <main>
-            <div class="hebergements-and-populaires">
+            <div style="display: none;" class="hebergements-and-populaires">
                 <section class="hebergements">
                     <div class="hebergements-title">
                         <h2 class="section-title">Hébergements à Marseille </h2>
                     </div>
-                    <div class="Hébergements-cards">
+                    <div class="hebergements-cards">
+                     
                         <article class="table">
-                            <img src="images/hebergements/fred-kleber.jpg">
+                            <img src="images/hebergements/fred-kleber.jpg" alt="image de chambre 1">
                             <div class="card-content">
                                 <div class="card-txt">
                                     <h3 class="card-title">Hôtel du port</h3>
@@ -66,6 +70,8 @@
                                 </div>
                             </div>
                         </article>
+                     
+
                         <article class="table">
                             <img src="images/hebergements/febrian-zakaria.jpg">
                             <div class="card-content">
@@ -223,8 +229,68 @@
                     </div>
                 </section>
             </div>
+            <section class="activité-marseille">
+                <h3>Activité à Marseille</h2>
+             <div class="activity-posts">
+               
+                <article class="post">
+                    <a href="#">
+                    <img src="images/activites/reno-laithienne.jpg">
+                    <h4>Vieux-port</h3>
+                    </a>    
+                </article>
+                
+                <article class="post">
+                    <a href="#">
+                    <img src="images/activites/paul-hermann.jpg">
+                    <h4>Fort de Pomègues</h3>
+                    </a>   
+                </article>
+               
+               
+                <article class="post">
+                    <a href="#">
+                    <img src="images/activites/kilyan-sockalingum.jpg" alt="">
+                    <h4>Parc national des Calanques</h3>
+                    </a>   
+                </article class="post">
+                
+                
+                <article class="post">
+                 <a href="#">
+                <img src="images/activites/florian-wehde.jpg" alt="">
+                <h5>Notre-Dame-de-la-Guard</h5>
+                </a>
+                </article>
+                
+            </section>
+          </div>
         </main>
-        <footer></footer>
+        <footer>
+            <article>
+                <h3>A Propos</h3>
+                <ul>
+                    <li><a href="#">fonctionnement de site</a></li>
+                    <li><a href="#">Conditions génerales</a></li>
+                    <li><a href="#">Données et confidentialités</a></li>    
+                </ul>
+            </article>
+            <article>
+                <h3>Nos Hébergement</h3>
+                <ul>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Proposer votre Hotel</a></li>  
+                </ul>
+            </article>
+            <article>
+                <h3>Assistance</h3>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous Contacter</a></li>
+                    <li><a href="#">Données et confidentialités</a></li>    
+                </ul>
+            </article>
+        </footer>
     </div>
 </body>
 
